@@ -26,10 +26,12 @@ node 'base' {
 node /^agent0.*/ inherits base {
   include postfix
   #  include openmediavault
+  notify { "${::hostname} classified as agent0.": }
 }
 
 node /^agent1.*/ inherits base {
   include bind
+  notify { "${::hostname} classified as agent1.": }
 }
 
 node default inherits base { 
