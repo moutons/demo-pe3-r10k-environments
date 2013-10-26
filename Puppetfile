@@ -9,3 +9,5 @@ mod 'nvpuppet/gitolite', '0.7.0'
 
 mod 'nrvale0/postfix'
 mod 'nrvale0/openmediavault'
+
+mod 'thias/bind', '0.4.1'
